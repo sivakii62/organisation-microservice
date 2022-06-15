@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/ms-test
+    password: mysqldb
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+  application:
+    name: DEPARTMENT-SERVICE
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
